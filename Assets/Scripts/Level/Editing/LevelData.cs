@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Level.Editor
+namespace Level.Editing
 {
     [Serializable]
     public class LevelData
@@ -19,11 +19,13 @@ namespace Level.Editor
     {
         private string _entity;
         private float _rotation;
+        private int _data;
 
-        public EntitiyOnLevel(string entity, float rotation)
+        public EntitiyOnLevel(string entity, float rotation, int data)
         {
             _entity = entity;
             _rotation = rotation;
+            _data = data;
         }
     }
 }

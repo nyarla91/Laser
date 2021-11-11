@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using NyarlaEssentials;
+﻿using NyarlaEssentials;
 using UnityEngine;
 
-namespace Level.Editor
+namespace Level.Editing
 {
     public class LevelParser : MonoBehaviour
     {
