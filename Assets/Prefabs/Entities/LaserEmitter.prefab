@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5527020849754616620}
   - component: {fileID: 5527020849754616623}
   - component: {fileID: 2587761879411904475}
+  - component: {fileID: 6810135400248534999}
   m_Layer: 8
   m_Name: LaserEmitter
   m_TagString: Untagged
@@ -167,3 +168,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11062765, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6810135400248534999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5527020849754616622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b9088ba69e49be9493450ca674bae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: emitter

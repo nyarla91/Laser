@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38b95eeeba748f4d911b33c4d834bef, type: 3}
+  m_Name: StandartPalette
+  m_EditorClassIdentifier: 
+  _brushes:
+  - {fileID: -7273798506435583352, guid: ae6f3e0d994400b4e8645672664e4dc7, type: 3}
+  - {fileID: 6810135400248534999, guid: cfb0fa62c272acc469038a76e8c70f39, type: 3}
+  - {fileID: 6526235548691233477, guid: c480d5c18c3507a4cb68050d2409ddd7, type: 3}
+  - {fileID: -7558884024670648980, guid: 5f82c133a2bd9434cbf78cc63ef06074, type: 3}
+  - {fileID: 6467409553263723538, guid: 192817a2a2a314949a1a412d78006e9f, type: 3}
+  - {fileID: 7225584297969696704, guid: d4800dcee87867041b6bb3389ec89d5a, type: 3}
+  - {fileID: -3819629382096804843, guid: b49ef7204dc5d0942b321449e1bd0b98, type: 3}
+  - {fileID: 3307247604528418305, guid: b1107d9530ac7064590076bb59a0a7d6, type: 3}

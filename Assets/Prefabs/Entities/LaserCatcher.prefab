@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8415393000214323638}
   - component: {fileID: 8415393000214323637}
   - component: {fileID: 8415393000214323636}
+  - component: {fileID: -7273798506435583352}
   m_Layer: 8
   m_Name: LaserCatcher
   m_TagString: Untagged
@@ -135,3 +136,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58256bd8db5a4314ea58de87c27a86f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7273798506435583352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8415393000214323633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b9088ba69e49be9493450ca674bae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: catcher

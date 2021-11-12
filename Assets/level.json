@@ -1,0 +1,85 @@
+{
+    "_entities": [
+        {
+            "_name": "mirror",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "_name": "mirror",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 1
+            }
+        },
+        {
+            "_name": "mirror",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 1
+            }
+        },
+        {
+            "_name": "mirror",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": 0
+            }
+        },
+        {
+            "_name": "mirror",
+            "_rotation": 90.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": 1
+            }
+        },
+        {
+            "_name": "mirror",
+            "_rotation": 90.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 0
+            }
+        },
+        {
+            "_name": "emitter",
+            "_rotation": 90.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": -1
+            }
+        },
+        {
+            "_name": "catcher",
+            "_rotation": 270.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 3
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    ]
+}

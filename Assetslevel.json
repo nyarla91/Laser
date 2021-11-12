@@ -1,0 +1,1 @@
+{"_entities":[{"_name":"emitter","_rotation":0.0,"_data":0,"_gridPosition":{"x":-1,"y":0}},{"_name":"catcher","_rotation":180.0,"_data":0,"_gridPosition":{"x":1,"y":0}},{"_name":"mirror","_rotation":90.0,"_data":0,"_gridPosition":{"x":0,"y":0}}]}
