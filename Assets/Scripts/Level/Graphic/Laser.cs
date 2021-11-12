@@ -11,8 +11,8 @@ namespace Level.Graphic
         {
             Vector3[] linePoints = new[]
             {
-                NEVectors.WithZ(originPoint, LevelBuilder.LaserLayerZ),
-                NEVectors.WithZ(targetPoint, LevelBuilder.LaserLayerZ),
+                NEVectors.WithZ(originPoint, LevelSpace.LaserLayerZ),
+                NEVectors.WithZ(targetPoint, LevelSpace.LaserLayerZ),
             };
             _lineRenderer.SetPositions(linePoints);
         }

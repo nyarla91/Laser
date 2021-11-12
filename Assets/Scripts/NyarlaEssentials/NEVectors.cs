@@ -155,6 +155,16 @@ namespace NyarlaEssentials
         }
 
         public static void Align(ref Vector2 vector, float step) => vector = Align(vector, step);
+
+        public static Vector2 IntToFloat(Vector2Int intVector) => new Vector2(intVector.x, intVector.y);
+        public static Vector3 IntToFloat(Vector3Int intVector) => new Vector3(intVector.x, intVector.y, intVector.z);
+        public static Vector2Int FloatToInt(Vector2 floatVector) => new Vector2Int(
+            Mathf.RoundToInt(floatVector.x),
+            Mathf.RoundToInt(floatVector.y));
+        public static Vector3Int FloatToInt(Vector3 floatVector) => new Vector3Int(
+            Mathf.RoundToInt(floatVector.x),
+            Mathf.RoundToInt(floatVector.y),
+            Mathf.RoundToInt(floatVector.z));
     }
 
     public enum Axis

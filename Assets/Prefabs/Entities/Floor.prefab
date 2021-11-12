@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4428402792275508436}
   - component: {fileID: 2103225027636812283}
   - component: {fileID: 8041909701852297351}
+  - component: {fileID: 7635581441171638178}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -102,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.96}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.96, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -139,3 +140,15 @@ MonoBehaviour:
   _name: floor
   _data: 0
   _background: 1
+--- !u!114 &7635581441171638178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4212562350640685585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489049871fff412a95513e0dfc687ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

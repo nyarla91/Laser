@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Level.Editing
 {
-    public class EditorPuzzleElement : Transformer
+    public class EntityInfo : Transformer
     {
         [SerializeField] private string _name;
         [SerializeField] private int _data;

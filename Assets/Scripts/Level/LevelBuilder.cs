@@ -8,16 +8,14 @@ namespace Level
 {
     public class LevelBuilder : SingletonImplenentator
     {
-        public const float BackgroundLayerZ = 10;
-        public const float EntityLayerZ = 0;
-        public const float LaserLayerZ = -1;
 
         private static LevelBuilder _instance;
+        public static LevelBuilder Instance => _instance;
 
         [SerializeField] private EntityPalette _entityPalette;
-        [SerializeField] [TextArea(10, 20)] private string _level;
+        [SerializeField] private TextAsset _level;
 
-        private Dictionary<string, EditorPuzzleElement> _buildingPallete = new Dictionary<string, EditorPuzzleElement>();
+        private Dictionary<string, EntityInfo> _buildingPallete = new Dictionary<string, EntityInfo>();
         
         public override void InitializeInstance()
         {
@@ -28,24 +26,24 @@ namespace Level
             }
         }
 
-        public EditorPuzzleElement EntityForName(string name)
+        public EntityInfo EntityForName(string name)
         {
             return _buildingPallete.ContainsKey(name) ? _buildingPallete[name] : null;
         }
 
         private void Awake()
         {
-            string targetJson = File.Exists(Application.dataPath + "/level.json")
-                ? File.ReadAllText(Application.dataPath + "/level.json") : _level;
+            string targetJson = _level.text;
             LevelData levelData = JsonUtility.FromJson<LevelData>(targetJson);
             
             foreach (var entity in levelData.Entities)
             {
-                EditorPuzzleElement entityObject = EntityForName(entity.Name);
-                float z = entityObject.Background ? BackgroundLayerZ : EntityLayerZ;
+                EntityInfo entityObject = EntityForName(entity.Name);
+                float z = entityObject.Background ? LevelSpace.BackgroundLayerZ : LevelSpace.EntityLayerZ;
                 Vector3 position = new Vector3(entity.GridPosition.x, entity.GridPosition.y, z);
                 Quaternion rotation = Quaternion.Euler(0, 0, entity.Rotation);
-                EditorPuzzleElement newEntity = Creator.Create<EditorPuzzleElement>(entityObject.gameObject, position, rotation);
+                
+                EntityInfo newEntity = Creator.Create<EntityInfo>(entityObject.gameObject, position, rotation);
                 newEntity.Data = entity.Data;
             }
         }

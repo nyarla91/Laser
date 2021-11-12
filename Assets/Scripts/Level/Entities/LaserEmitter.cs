@@ -1,9 +1,9 @@
-﻿using Level.Entity.Component;
+﻿using Level.Entities.Component;
 using Project;
 using NyarlaEssentials;
 using UnityEngine;
 
-namespace Level.Entity
+namespace Level.Entities
 {
     [RequireComponent(typeof(LaserCaster))]
     public class LaserEmitter : PuzzleElement, IRecalculated

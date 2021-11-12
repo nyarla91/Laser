@@ -144,9 +144,8 @@ namespace NyarlaEssentials.Pointers
                 Collider2D[] colliders = Physics2D.OverlapPointAll(overlapPoint);
                 if (colliders.Length > 0)
                 {
-                    colliders = colliders.OrderBy(
-                        collider => -collider.transform.position.z + (collider.GetComponent<PointerTarget>() != null ? 10000 : -10000)
-                        ).ToArray();
+                    colliders = colliders.Where(collider => collider.GetComponent<PointerTarget>() != null)
+                        .OrderBy(collider => -collider.transform.position.z).ToArray();
                     contactPoint = NEVectors.WithZ(overlapPoint, colliders[0].transform.position.z);
                     return colliders[0].GetComponent<PointerTarget>();
                 }

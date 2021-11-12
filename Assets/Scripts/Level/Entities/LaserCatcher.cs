@@ -1,13 +1,12 @@
-﻿using System.IO;
-using Level.Entity.Component;
+﻿using System;
+using Level.Entities.Component;
 using Project;
 using UnityEngine;
 
-namespace Level.Entity
+namespace Level.Entities
 {
-    [RequireComponent(typeof(LaserCaster))]
     [RequireComponent(typeof(LaserReciever))]
-    public class LaserRelay : PuzzleElement
+    public class LaserCatcher : PuzzleElement
     {
         private void Awake()
         {
@@ -16,7 +15,8 @@ namespace Level.Entity
 
         private void OnLaserHit(OrtigraphicVector directionFrom)
         {
-            Caster.CastLaser(transform.position, directionFrom.Opposite);
+            if (!Direction.Equals(directionFrom))
+                return;
         }
     }
 }

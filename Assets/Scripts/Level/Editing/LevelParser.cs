@@ -14,7 +14,7 @@ namespace Level.Editing
         private LevelData LevelDataFromScene()
         {
             LevelData newLevel = new LevelData();
-            EditorPuzzleElement[] elements = transform.GetComponentsInChildren<EditorPuzzleElement>();
+            EntityInfo[] elements = transform.GetComponentsInChildren<EntityInfo>();
             foreach (var element in elements)
             {
                 float rotation = element.transform.eulerAngles.z;

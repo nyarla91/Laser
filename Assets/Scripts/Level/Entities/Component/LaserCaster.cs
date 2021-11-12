@@ -6,7 +6,7 @@ using Project;
 using NyarlaEssentials;
 using UnityEngine;
 
-namespace Level.Entity.Component
+namespace Level.Entities.Component
 {
     public class LaserCaster : Transformer, IRecalculated
     {

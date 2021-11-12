@@ -1,4 +1,4 @@
-﻿namespace Level.Entity
+﻿namespace Level.Entities
 {
     public interface IRecalculated
     {

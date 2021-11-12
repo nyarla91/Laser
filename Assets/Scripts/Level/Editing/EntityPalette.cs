@@ -7,7 +7,7 @@ namespace Level.Editing
     [CreateAssetMenu(menuName = "Entity Palette")]
     public class EntityPalette : ScriptableObject
     {
-        [SerializeField] private List<EditorPuzzleElement> _brushes;
-        public List<EditorPuzzleElement> Brushes => _brushes;
+        [SerializeField] private List<EntityInfo> _brushes;
+        public List<EntityInfo> Brushes => _brushes;
     }
 }

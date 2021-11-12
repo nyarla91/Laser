@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Project;
 using UnityEngine;
 
-namespace Level.Entity.Component
+namespace Level.Entities.Component
 {
     public class LaserReciever : MonoBehaviour
     {

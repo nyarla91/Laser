@@ -1,9 +1,9 @@
 ﻿using System;
-using Level.Entity.Component;
+using Level.Entities.Component;
 using Project;
 using UnityEngine;
 
-namespace Level.Entity
+namespace Level.Entities
 {
     [RequireComponent(typeof(LaserCaster))]
     [RequireComponent(typeof(LaserReciever))]

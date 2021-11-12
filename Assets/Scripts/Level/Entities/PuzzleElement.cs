@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Level.Entity;
-using Level.Entity.Component;
+using Level.Entities;
+using Level.Entities.Component;
 using UnityEngine;
 
 public class PuzzleElement : Entity

@@ -4,7 +4,7 @@ using NyarlaEssentials;
 using Project;
 using UnityEngine;
 
-namespace Level.Entity
+namespace Level.Entities
 {
     public class Entity : Transformer
     {
