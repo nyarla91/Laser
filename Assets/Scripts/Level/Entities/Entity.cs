@@ -8,9 +8,6 @@ namespace Level.Entities
 {
     public class Entity : Transformer
     {
-        private OrtigraphicVector _direction;
-
-        public OrtigraphicVector Direction => _direction ??
-            (_direction = new OrtigraphicVector(NEVectors.DegreesToVector2(transform.rotation.eulerAngles.z)));
+        public OrtigraphicVector Direction => new OrtigraphicVector(NEVectors.DegreesToVector2(transform.rotation.eulerAngles.z));
     }
 }

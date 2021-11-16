@@ -27,14 +27,11 @@ namespace Level
 
         private IEnumerator FirstTurn()
         {
-            while (true)
-            {
-                yield return new WaitForSeconds(0.5f);
-                RecalculateAll();
-            }
+            yield return new WaitForSeconds(0.5f);
+            RecalculateAll();
         }
 
-        private void RecalculateAll()
+        public void RecalculateAll()
         {
             _recalculatedEntities = _recalculatedEntities.OrderBy(entity => -entity.GetRecalculationPriority()).ToList();
             foreach (var entity in _recalculatedEntities)

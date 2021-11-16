@@ -65,7 +65,7 @@ namespace NyarlaEssentials.Pointers
 
         private void OnDestroy()
         {
-            PointerCaster.Instance.targets.Remove(this);
+            PointerCaster.Instance?.targets.Remove(this);
         }
     }
 

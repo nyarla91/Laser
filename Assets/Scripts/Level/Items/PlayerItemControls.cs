@@ -1,4 +1,5 @@
 ﻿using Level.Editing;
+using Level.Entities.Component;
 using NyarlaEssentials;
 using Project;
 using UnityEngine;
@@ -33,9 +34,12 @@ namespace Level.Items
             }
             GameObject placedEntity = LevelBuilder.Instance.EntityForName(_currentPlacingItem.Entity.Name).gameObject;
             Vector3 worldPosition = new Vector3(position.x, position.y, LevelSpace.BackgroundLayerZ);
-            Creator.Create<EntityInfo>(placedEntity, worldPosition);
-
+            EntityInfo newEntity = Creator.Create<EntityInfo>(placedEntity, worldPosition);
+            EntityPlayerControl newEntityPlayerControl = newEntity.GetComponentInChildren<EntityPlayerControl>();
+            newEntityPlayerControl.Init(_currentPlacingItem);
             
+            LevelTurns.Instance.RecalculateAll();
+            _currentPlacingItem.SpendOneItem();
             CancelPlacingItem();
         }
 
