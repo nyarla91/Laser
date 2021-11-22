@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8415393000214323634}
   - component: {fileID: 8415393000214323638}
   - component: {fileID: 8415393000214323637}
+  - component: {fileID: -7044730652547798221}
   - component: {fileID: 8415393000214323636}
   - component: {fileID: -7273798506435583352}
   m_Layer: 8
@@ -124,6 +125,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9714e26bc5a54294385e02c5910e7b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7044730652547798221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8415393000214323633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dacdd8eddcd4a44b9e62dd196c64216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8415393000214323636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58256bd8db5a4314ea58de87c27a86f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _prerequsite: {fileID: -7044730652547798221}
 --- !u!114 &-7273798506435583352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,3 +163,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: catcher
+  _data: 0
+  _background: 0

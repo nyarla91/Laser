@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7737145973884773115}
   - component: {fileID: 209245142209197613}
   - component: {fileID: 3601386663395207144}
+  - component: {fileID: 4338568088002983283}
   - component: {fileID: 6612530320314733441}
   - component: {fileID: 5499579654074187659}
   - component: {fileID: 6467409553263723538}
@@ -111,6 +112,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9714e26bc5a54294385e02c5910e7b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4338568088002983283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902186746820478169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dacdd8eddcd4a44b9e62dd196c64216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6612530320314733441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57baeb4e793c4c26a51d43ab148eaca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _prerequsite: {fileID: 4338568088002983283}
 --- !u!58 &5499579654074187659
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -152,3 +166,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: relay
+  _data: 0
+  _background: 0

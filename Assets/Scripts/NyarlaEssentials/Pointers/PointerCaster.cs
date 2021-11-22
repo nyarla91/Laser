@@ -145,7 +145,7 @@ namespace NyarlaEssentials.Pointers
                 if (colliders.Length > 0)
                 {
                     colliders = colliders.Where(collider => collider.GetComponent<PointerTarget>() != null)
-                        .OrderBy(collider => -collider.transform.position.z).ToArray();
+                        .OrderBy(collider => collider.transform.position.z).ToArray();
                     contactPoint = NEVectors.WithZ(overlapPoint, colliders[0].transform.position.z);
                     return colliders[0].GetComponent<PointerTarget>();
                 }

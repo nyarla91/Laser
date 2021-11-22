@@ -6,7 +6,25 @@
             "_data": 0,
             "_gridPosition": {
                 "x": 0,
-                "y": 0
+                "y": 4
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 4
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": 4
             }
         },
         {
@@ -15,7 +33,25 @@
             "_data": 0,
             "_gridPosition": {
                 "x": -1,
-                "y": 0
+                "y": 4
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -2,
+                "y": 4
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 3
             }
         },
         {
@@ -24,7 +60,43 @@
             "_data": 0,
             "_gridPosition": {
                 "x": 1,
-                "y": 0
+                "y": 3
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": 3
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": 3
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -2,
+                "y": 3
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 2
             }
         },
         {
@@ -33,7 +105,34 @@
             "_data": 0,
             "_gridPosition": {
                 "x": 1,
-                "y": 1
+                "y": 2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": 2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": 2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -2,
+                "y": 2
             }
         },
         {
@@ -50,7 +149,16 @@
             "_rotation": 0.0,
             "_data": 0,
             "_gridPosition": {
-                "x": -1,
+                "x": 1,
+                "y": 1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
                 "y": 1
             }
         },
@@ -60,7 +168,61 @@
             "_data": 0,
             "_gridPosition": {
                 "x": -1,
-                "y": -1
+                "y": 1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -2,
+                "y": 1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 0
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": 0
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": 0
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -2,
+                "y": 0
             }
         },
         {
@@ -79,6 +241,78 @@
             "_gridPosition": {
                 "x": 1,
                 "y": -1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": -1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": -1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -2,
+                "y": -1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": -2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": -2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": -2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": -2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -2,
+                "y": -2
             }
         },
         {
@@ -87,125 +321,54 @@
             "_data": 0,
             "_gridPosition": {
                 "x": 0,
-                "y": -1
+                "y": -2
+            }
+        },
+        {
+            "_name": "relay",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": 2
+            }
+        },
+        {
+            "_name": "relay",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 2
+            }
+        },
+        {
+            "_name": "relay",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 0
             }
         },
         {
             "_name": "catcher",
-            "_rotation": 180.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 1,
-                "y": 0
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 0,
-                "y": 2
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": -1,
-                "y": 2
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 1,
-                "y": 2
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 0,
-                "y": -2
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": -1,
-                "y": -2
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 1,
-                "y": -2
-            }
-        },
-        {
-            "_name": "wall",
             "_rotation": 0.0,
             "_data": 0,
             "_gridPosition": {
                 "x": -2,
                 "y": 0
             }
+        }
+    ],
+    "_items": [
+        {
+            "_entityName": "mirror",
+            "_ammount": 3
         },
         {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": -2,
-                "y": 1
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": -2,
-                "y": -1
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 2,
-                "y": 0
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 2,
-                "y": 1
-            }
-        },
-        {
-            "_name": "wall",
-            "_rotation": 0.0,
-            "_data": 0,
-            "_gridPosition": {
-                "x": 2,
-                "y": -1
-            }
+            "_entityName": "splitter",
+            "_ammount": 2
         }
     ]
 }
