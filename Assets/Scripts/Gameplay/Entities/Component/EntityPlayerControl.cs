@@ -28,7 +28,6 @@ namespace Gameplay.Entities.Component
         {
             _pointerTarget = GetComponent<PointerTarget>();
             _pointerTarget.OnClick += OnClick;
-            _pointerTarget.OnClick += (pointer, position) => print("REda");
             _pointerTarget.OnDrag += OnDrag;
             _pointerTarget.OnDragEnd += OnDragEnd;
             _pointerTarget.OnUp += OnUp;
@@ -36,7 +35,6 @@ namespace Gameplay.Entities.Component
 
         private void OnClick(PointerType pointer, Vector3 position)
         {
-            print("ROTA");
             Rotate();
         } 
 
@@ -62,7 +60,6 @@ namespace Gameplay.Entities.Component
 
         private void Rotate()
         {
-            print("ROTO");
             transform.parent.Rotate(0, 0, -90);
             Level.Instance.Turns.RecalculateAll();
         }

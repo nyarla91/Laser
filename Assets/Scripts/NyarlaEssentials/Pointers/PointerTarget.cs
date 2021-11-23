@@ -26,7 +26,6 @@ namespace NyarlaEssentials.Pointers
             OnDown += PoinerPositionPlug;
             OnUp += PoinerPositionPlug;
             OnClick += PoinerPositionPlug;
-            OnClick += (p1, p2) => print(gameObject.name);
             OnDoubleClick += PoinerPositionPlug;
             OnDrag += PointerPlug;
             OnDragEnd += PointerPlug;

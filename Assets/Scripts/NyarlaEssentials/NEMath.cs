@@ -50,5 +50,7 @@ namespace NyarlaEssentials
         public static void SetMax(ref int a, int b) => a = Mathf.Max(a, b);
         public static void SetMin(ref float a, float b) => a = Mathf.Min(a, b);
         public static void SetMin(ref int a, int b) => a = Mathf.Min(a, b);
+
+        public static bool IsEven(int value) => value % 2 == 0;
     }
 }

@@ -29,6 +29,7 @@ namespace Gameplay
                 LevelData levelData = JsonUtility.FromJson<LevelData>(targetJson);
                 BuildLevel(levelData.Entities);
                 BuildPuzzleItems(levelData.Items);
+                Level.Instance.Camera.Setup(levelData.Size.x);
             }
         }
 
