@@ -45,5 +45,10 @@ namespace NyarlaEssentials
             }
             return total / numbers.Length;
         }
+
+        public static void SetMax(ref float a, float b) => a = Mathf.Max(a, b);
+        public static void SetMax(ref int a, int b) => a = Mathf.Max(a, b);
+        public static void SetMin(ref float a, float b) => a = Mathf.Min(a, b);
+        public static void SetMin(ref int a, int b) => a = Mathf.Min(a, b);
     }
 }

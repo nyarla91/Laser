@@ -364,11 +364,15 @@
     "_items": [
         {
             "_entityName": "mirror",
-            "_ammount": 3
+            "_ammount": 12
         },
         {
             "_entityName": "splitter",
-            "_ammount": 2
+            "_ammount": 12
         }
-    ]
+    ],
+    "size": {
+        "x": 5,
+        "y": 7
+    }
 }

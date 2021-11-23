@@ -21,6 +21,10 @@ namespace Gameplay.Editing
         private void AddEntitiesToLevel(ref LevelData level)
         {
             EntityInfo[] elements = transform.GetComponentsInChildren<EntityInfo>();
+            
+            Vector2Int mostPositions = new Vector2Int(Int32.MinValue, Int32.MinValue);
+            Vector2Int leastPositions = new Vector2Int(Int32.MaxValue, Int32.MaxValue);
+            
             foreach (var element in elements)
             {
                 float rotation = element.transform.eulerAngles.z;
@@ -28,7 +32,13 @@ namespace Gameplay.Editing
                 Vector2Int gridPosition = new Vector2Int
                     (Mathf.RoundToInt(elementPosition.x), Mathf.RoundToInt(elementPosition.y));
                 level.AddEntity(new EntitiyOnLevel(element.Name, rotation, element.Data, gridPosition));
+                
+                mostPositions.x = Mathf.Max(mostPositions.x, gridPosition.x);
+                mostPositions.y = Mathf.Max(mostPositions.y, gridPosition.y);
+                leastPositions.x = Mathf.Min(leastPositions.x, gridPosition.x);
+                leastPositions.y = Mathf.Min(leastPositions.y, gridPosition.y);
             }
+            level.Size = mostPositions - leastPositions + Vector2Int.one;
         }
 
         private void AddPuzzleItemsToLevel(ref LevelData level)

@@ -10,6 +10,7 @@ namespace NyarlaEssentials.Pointers
         
         [Tooltip("Period of invoking OnDrag event\n0 or less - every frame")]
         [SerializeField] private float _dragPeriod;
+        public float DeltaDragTime => _dragPeriod > 0 ? _dragPeriod : Time.deltaTime;
         
         public delegate void MousePointActionHandler(PointerType button, Vector3 contactPoint);
         public MousePointActionHandler OnDown, OnUp, OnClick, OnDoubleClick;
@@ -25,6 +26,7 @@ namespace NyarlaEssentials.Pointers
             OnDown += PoinerPositionPlug;
             OnUp += PoinerPositionPlug;
             OnClick += PoinerPositionPlug;
+            OnClick += (p1, p2) => print(gameObject.name);
             OnDoubleClick += PoinerPositionPlug;
             OnDrag += PointerPlug;
             OnDragEnd += PointerPlug;

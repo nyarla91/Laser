@@ -1,7 +1,7 @@
 ﻿using NyarlaEssentials;
 using UnityEngine;
 
-namespace Project
+namespace NyarlaEssentials
 {
     public class OrtigraphicVector
     {
@@ -13,6 +13,9 @@ namespace Project
             set => _vector = NEVectors.Align(value, 90);
         }
 
+        public bool IsHorizontal => Mathf.Abs(Vector.x) > Mathf.Abs(Vector.y);
+        public bool IsVertical => !IsHorizontal;
+
         public OrtigraphicVector Opposite => new OrtigraphicVector(_vector * -1);
 
         public OrtigraphicVector(Vector2 vector)
@@ -22,6 +25,8 @@ namespace Project
 
         public override bool Equals(object obj)
         {
+            if (obj == null)
+                return false;
             return obj is OrtigraphicVector && Vector == ((OrtigraphicVector) obj).Vector;
         }
 

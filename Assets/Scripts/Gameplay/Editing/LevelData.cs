@@ -9,8 +9,17 @@ namespace Gameplay.Editing
     {
         [SerializeField] private List<EntitiyOnLevel> _entities = new List<EntitiyOnLevel>();
         [SerializeField] private List<PuzzleItemOnLevel> _items = new List<PuzzleItemOnLevel>();
+        [SerializeField] private Vector2Int size;
+
         public List<EntitiyOnLevel> Entities => _entities;
+
         public List<PuzzleItemOnLevel> Items => _items;
+
+        public Vector2Int Size
+        {
+            get => size;
+            set => size = value;
+        }
 
         public void AddEntity(EntitiyOnLevel entityToAdd)
         {
