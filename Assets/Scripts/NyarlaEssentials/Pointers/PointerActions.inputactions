@@ -11,7 +11,8 @@
                     "id": "a3d04975-5c73-4b4c-a6ca-95bd970b9354",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RightClick",
@@ -19,7 +20,8 @@
                     "id": "360009cd-f1d6-4a66-b1a7-faa27247a94d",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MiddleClick",
@@ -27,7 +29,8 @@
                     "id": "075f7738-b300-4335-99df-3a02594ec32e",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "LeftMouse",
@@ -35,7 +38,8 @@
                     "id": "6e55d6eb-e88f-41cb-914f-6577ad843f54",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RightMouse",
@@ -43,7 +47,8 @@
                     "id": "489b67ca-1431-4540-bad4-826db9efc61f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MiddleMouse",
@@ -51,7 +56,8 @@
                     "id": "2a01e055-7e9b-489a-9077-2e4c31f5b215",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "LeftDouble",
@@ -59,7 +65,8 @@
                     "id": "c7113a04-879d-4535-9791-92be40f664af",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RightDouble",
@@ -67,7 +74,8 @@
                     "id": "86b8adef-b7e7-413c-9c71-4b3905c7fd93",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MiddleDouble",
@@ -75,7 +83,8 @@
                     "id": "a2dad4b4-ec19-481f-8abd-2f1bbfc1eebb",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -190,7 +199,8 @@
                     "id": "c1e169eb-0372-4069-b92e-029ff02969c9",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Tap",
@@ -198,7 +208,8 @@
                     "id": "746e1039-bbcc-48bc-97c8-362769e16aac",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "DoubleTap",
@@ -206,7 +217,8 @@
                     "id": "46d107b6-5619-4a13-b3f6-d707e072aab9",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [

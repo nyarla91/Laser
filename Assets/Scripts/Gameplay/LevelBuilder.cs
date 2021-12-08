@@ -9,7 +9,6 @@ namespace Gameplay
     public class LevelBuilder : MonoBehaviour
     {
         [SerializeField] private EntityPalette _entityPalette;
-        [SerializeField] private TextAsset _level;
         [SerializeField] private RectTransform _puzzleItemsOrigin;
         [SerializeField] private GameObject _puzzleItemPrefab;
 
@@ -20,12 +19,12 @@ namespace Gameplay
             return _buildingPallete.ContainsKey(name) ? _buildingPallete[name] : null;
         }
 
-        private void Awake()
+        public void InitializeLevel(TextAsset level)
         {
-            if (_level != null)
+            if (level != null)
             {
                 InitializePallete();
-                string targetJson = _level.text;
+                string targetJson = level.text;
                 LevelData levelData = JsonUtility.FromJson<LevelData>(targetJson);
                 BuildLevel(levelData.Entities);
                 BuildPuzzleItems(levelData.Items);
@@ -52,7 +51,8 @@ namespace Gameplay
             float edgeX = 0.5f * (_puzzleItems.Count - 1);
             for (int i = 0; i < _puzzleItems.Count; i++)
             {
-                float positionX = Mathf.Lerp(-edgeX, edgeX, (float) i / (_puzzleItems.Count - 1));
+                float positionX = _puzzleItems.Count > 1 ?
+                    Mathf.Lerp(-edgeX, edgeX, (float) i / (_puzzleItems.Count - 1)) : 0;
                 PuzzleItem newPuzzleItem = Instantiate(_puzzleItemPrefab, _puzzleItemsOrigin).GetComponent<PuzzleItem>();
                 newPuzzleItem.RectTransform.anchoredPosition = new Vector2(positionX * 250, 0);
                 newPuzzleItem.Init(_puzzleItems[i]);

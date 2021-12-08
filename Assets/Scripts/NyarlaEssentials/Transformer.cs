@@ -8,10 +8,10 @@ namespace NyarlaEssentials
     public class Transformer : MonoBehaviour
     {
         private Transform _transform;
-        public new Transform transform => _transform ?? (_transform = gameObject.transform);
+        public new Transform transform => _transform ??= gameObject.transform;
     
         private RectTransform _rectTransform;
-        public RectTransform RectTransform => _rectTransform ?? (_rectTransform = GetComponent<RectTransform>());
+        public RectTransform RectTransform => _rectTransform ??= GetComponent<RectTransform>();
 
         public Transform[] AllChildren
         {

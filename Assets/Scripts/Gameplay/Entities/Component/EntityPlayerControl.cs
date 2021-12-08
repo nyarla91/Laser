@@ -3,6 +3,7 @@ using System.Numerics;
 using Gameplay.Items;
 using NyarlaEssentials;
 using NyarlaEssentials.Pointers;
+using Project;
 using UnityEngine;
 using PointerType = NyarlaEssentials.Pointers.PointerType;
 using Vector2 = UnityEngine.Vector2;
@@ -35,8 +36,8 @@ namespace Gameplay.Entities.Component
 
         private void OnClick(PointerType pointer, Vector3 position)
         {
-            Rotate();
-        } 
+            //Rotate();
+        }
 
         private void OnDrag(PointerType pointer) => _removeTimer += _pointerTarget.DeltaDragTime;
 
@@ -46,6 +47,10 @@ namespace Gameplay.Entities.Component
             {
                 Remove();
             }
+            else
+            {
+                Rotate();
+            }
             OnDragEnd(pointer);
         }
 
@@ -53,6 +58,8 @@ namespace Gameplay.Entities.Component
 
         private void Remove()
         {
+            if (SceneLoader.Loading)
+                return;
             _puzzleItem.AddOneItem();
             Destroy(transform.parent.gameObject);
             Level.Instance.Turns.RecalculateAll();
@@ -60,6 +67,8 @@ namespace Gameplay.Entities.Component
 
         private void Rotate()
         {
+            if (SceneLoader.Loading)
+                return;
             transform.parent.Rotate(0, 0, -90);
             Level.Instance.Turns.RecalculateAll();
         }

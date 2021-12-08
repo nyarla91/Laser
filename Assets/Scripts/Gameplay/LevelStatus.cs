@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Gameplay.Entities.Component;
+using Project;
 using UnityEngine;
 
 namespace Gameplay
@@ -21,6 +22,11 @@ namespace Gameplay
             StartCoroutine(VictoryCheck());
         }
 
+        private void Awake()
+        {
+            OnVictory += GoToNextScene;
+        }
+
         private IEnumerator VictoryCheck()
         {
             yield return null;
@@ -32,6 +38,14 @@ namespace Gameplay
                 }
             }
             OnVictory?.Invoke();
+        }
+
+        private void GoToNextScene()
+        {
+            Level.IncrementLevelIndex();
+            string sceneName = Level.CurrentLevelPack.TryGetLevel(Level.CurrentLevelIndex)
+                ? SceneName.Gameplay : SceneName.Menu;
+            SceneLoader.Load(sceneName);
         }
     }
 }

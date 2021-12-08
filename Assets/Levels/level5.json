@@ -1,0 +1,95 @@
+{
+    "_entities": [
+        {
+            "_name": "catcher",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": 1
+            }
+        },
+        {
+            "_name": "emitter",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": -1,
+                "y": -1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": -1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 1
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": 2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 1,
+                "y": 2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": -2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 0,
+                "y": -2
+            }
+        },
+        {
+            "_name": "floor",
+            "_rotation": 0.0,
+            "_data": 0,
+            "_gridPosition": {
+                "x": 2,
+                "y": 0
+            }
+        }
+    ],
+    "_items": [
+        {
+            "_entityName": "mirror",
+            "_ammount": 6
+        }
+    ],
+    "size": {
+        "x": 4,
+        "y": 5
+    }
+}

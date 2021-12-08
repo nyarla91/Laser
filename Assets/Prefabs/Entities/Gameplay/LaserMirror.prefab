@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4413561038990277436}
   - component: {fileID: 4413561038990277437}
   - component: {fileID: 4413561038990277438}
-  - component: {fileID: 4413561038990277425}
   - component: {fileID: 6526235548691233477}
+  - component: {fileID: 7673836149679472475}
   m_Layer: 8
   m_Name: LaserMirror
   m_TagString: Untagged
@@ -124,7 +124,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a978994a45e043698d73ca2b3d97fd10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &4413561038990277425
+--- !u!114 &6526235548691233477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413561038990277439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b9088ba69e49be9493450ca674bae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: mirror
+  _data: 0
+  _background: 0
+--- !u!60 &7673836149679472475
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,27 +164,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.48, y: 0.48}
-      - {x: -0.44777283, y: 0.4346223}
-      - {x: 0.43600476, y: -0.4682144}
-      - {x: 0.48, y: -0.48}
-      - {x: 0.43537778, y: -0.4197482}
-      - {x: -0.43214327, y: 0.45025185}
---- !u!114 &6526235548691233477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4413561038990277439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11b9088ba69e49be9493450ca674bae5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: mirror
-  _data: 0
-  _background: 0
+    - - {x: 0.437666, y: 0.45680305}
+      - {x: -0.46953192, y: -0.4481436}
+      - {x: -0.5, y: -0.5}
+      - {x: -0.45385635, y: -0.4514415}
+      - {x: 0.45418507, y: 0.43897495}
+      - {x: 0.5, y: 0.5}
 --- !u!1 &5823220159254238711
 GameObject:
   m_ObjectHideFlags: 0

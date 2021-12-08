@@ -7,7 +7,7 @@ namespace NyarlaEssentials
         private GameObject _owner;
 
         private T _v;
-        public T V => _v ?? (_v = _owner.GetComponent<T>());
+        public T V => _v ??= _owner.GetComponent<T>();
         
         public AutoGetComponent(GameObject owner)
         {

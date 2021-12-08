@@ -8,6 +8,7 @@ namespace Gameplay.Editing
 {
     public class LevelParser : Transformer
     {
+        [SerializeField] private string _levelName;
         [SerializeField] private List<PuzzleItemInEditor> _puzzleItems;
         
         private void Start()
@@ -58,7 +59,7 @@ namespace Gameplay.Editing
         private void SaveLevel(string json)
         {
             print(json);
-            File.WriteAllText(Application.dataPath + "/level.json", json);
+            File.WriteAllText( $"{Application.dataPath}/Levels/{_levelName}.json", json);
         }
     }
 

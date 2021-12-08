@@ -18,7 +18,7 @@ namespace Gameplay.Entities
 
         private void OnLaserHit(OrtigraphicVector directionFrom)
         {
-            Vector2 normal = Direction.IsHorizontal ? new Vector2(1, -1) : Vector2.one;
+            Vector2 normal = Direction.IsVertical ? new Vector2(1, -1) : Vector2.one;
             OrtigraphicVector directionTo = new OrtigraphicVector(Vector2.Reflect(directionFrom.Vector, normal));
             Caster.CastLaser(transform.position, directionTo);
         }

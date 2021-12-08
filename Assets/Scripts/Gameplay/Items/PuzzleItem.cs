@@ -1,5 +1,6 @@
 ﻿using Gameplay.Editing;
 using NyarlaEssentials;
+using Project;
 using TMPro;
 using UnityEngine;
 
@@ -32,7 +33,7 @@ namespace Gameplay.Items
         
         public void Select()
         {
-            if (_ammount > 0)
+            if (SceneLoader.NotLoading && _ammount > 0)
             {
                 PlayerItemControls.Instance.StartPlacingItem(this);
             }
