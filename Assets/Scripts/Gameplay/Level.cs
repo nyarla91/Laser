@@ -12,7 +12,7 @@ namespace Gameplay
         public static Level Instance => _instance;
         
         private static LevelPack _currentLevelPack;
-        private static int _currentLevelIndex;
+        private static int _currentLevelIndex = 1;
 
         public static LevelPack CurrentLevelPack => _currentLevelPack;
         public static int CurrentLevelIndex => _currentLevelIndex;

@@ -1,27 +1,16 @@
-﻿using NyarlaEssentials.Pointers;
-using Project;
+﻿using Project;
 using UnityEngine;
-using PointerType = NyarlaEssentials.Pointers.PointerType;
 
 namespace Menu
 {
-    [RequireComponent(typeof(PointerTarget))]
     public class Level : MonoBehaviour
     {
-        [SerializeField] private LevelPack _levelPackIn;
+        [SerializeField] private LevelPack _packIn;
         [SerializeField] private int _levelIndex;
 
-        private PointerTarget _pointerTarget;
-
-        private void Awake()
+        public void OnClick()
         {
-            _pointerTarget = GetComponent<PointerTarget>();
-            _pointerTarget.OnClick += OnClick;
-        }
-
-        private void OnClick(PointerType pointer, Vector3 contactPoint)
-        {
-            Gameplay.Level.SetCurrentLevel(_levelPackIn, _levelIndex);
+            Gameplay.Level.SetCurrentLevel(_packIn, _levelIndex);
             SceneLoader.Load(SceneName.Gameplay);
         }
     }
